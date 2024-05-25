@@ -1,0 +1,13 @@
+Docker Setup
+
+1. Build the Docker image:
+
+docker build -t poc:latest .
+
+2. Run the Docker container:
+
+docker run -p 9000:9000 poc:latest
+
+3. Access the server at `http://localhost:9000` with a `url` query parameter:
+
+curl "http://localhost:9000/?url=https://example.com"
